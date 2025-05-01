@@ -9,7 +9,7 @@ img=st.camera_input("Kamera")
 def process_image(input_img):
     if input_img.mode == 'RGBA':
         input_img = input_img.convert('RGB')
-    input_img=input_img.resize((170,170)) 
+    input_img=input_img.resize((110,110)) 
     input_img=np.array(input_img)
     input_img=input_img/255.0
     input_img=np.expand_dims(input_img,axis=0)
